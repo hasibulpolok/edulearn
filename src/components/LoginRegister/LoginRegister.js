@@ -61,7 +61,7 @@ const LoginRegister = () => {
                             <Form.Check type="checkbox" label="Check me out" />
                         </Form.Group>
 
-                        <Button variant="primary" type="submit" className="fw-bold text-danger">
+                        <Button variant="primary" type="submit" className="fw-bold btn-danger">
                             Submit
                         </Button>
                     </Form>
@@ -84,7 +84,7 @@ const LoginRegister = () => {
                         <Form.Group className="mb-3" controlId="formBasicCheckbox">
                             <Form.Check type="checkbox" label="Check me out" />
                         </Form.Group>
-                        <Button variant="primary" className="fw-bold text-danger" type="submit">
+                        <Button variant="primary" className="fw-bold btn-danger" type="submit">
                             Login
                         </Button>
                     </Form>

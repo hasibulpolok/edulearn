@@ -23,7 +23,7 @@ const Home = () => {
                         </Form>
                     </div>
                     <div className="buttonbrowse">
-                        <button>Browse Categrories</button>
+                        <button className="btn btn-danger"><Nav.Link><Link className="text-white text-decoration-none fw-bold bg-danger p-2 my-2 rounded" to="/enroll">Enroll Now</Link></Nav.Link></button>
                     </div>
                 </>
             </div>

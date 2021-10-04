@@ -8,6 +8,7 @@ import About from './components/About/About';
 import Courses from './components/Courses/Courses';
 import Contact from './components/Contact/Contact';
 import NotFound from './components/NotFound/NotFound';
+import LoginRegister from './components/LoginRegister/LoginRegister';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
          </Route>
          <Route path="/contact">
            <Contact/>
+         </Route>
+         <Route path="/enroll">
+           <LoginRegister/>
          </Route>
          <Route path="/*">
            <NotFound/>

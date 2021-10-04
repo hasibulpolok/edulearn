@@ -3,7 +3,7 @@ import React from 'react';
 import stimg1 from '../../images/student-1.jpeg';
 import stimg2 from '../../images/student-2.jpg';
 
-import { Card, Carousel, Col, Container, Form, FormControl, Image, Nav, Row } from 'react-bootstrap';
+import { Form, FormControl, Image, Nav, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
@@ -23,7 +23,7 @@ const Home = () => {
                         </Form>
                     </div>
                     <div className="buttonbrowse">
-                        <button className="btn btn-danger"><Nav.Link><Link className="text-white text-decoration-none fw-bold bg-danger p-2 my-2 rounded" to="/enroll">Enroll Now</Link></Nav.Link></button>
+                        <button className="btn btn-danger"><Nav.Link><Link className="text-white text-decoration-none fw-bold bg-danger p-2 my-2 rounded" to="/courses">Browse Course</Link></Nav.Link></button>
                     </div>
                 </>
             </div>
@@ -53,23 +53,20 @@ const Home = () => {
                 
 
                 <div className="details my-5">
-                    <h3>We Have The Best Online Education in The City</h3>
-                    <p> At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                        blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-                        similique</p>
+                    
 
                     <ol>
                         <li><strong>Create account</strong></li>
-                        <p>Oluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                        <p>Create an account first to be a member of our community.</p>
 
                         <li><strong>Join Membershipt</strong></li>
-                        <p>Oluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                        <p>We have different types of membership , choose the type of yours!</p>
 
                         <li><strong>Start Learning</strong></li>
-                        <p>Oluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                        <p>WoW! Now you are a member of our community. Now you can start learning</p>
 
                         <li><strong>Get Certificate</strong></li>
-                        <p>Oluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
+                        <p>After completing the course you will get a professinal certificate!</p>
 
                     </ol>
                 </div>

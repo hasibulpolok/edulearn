@@ -6,7 +6,7 @@ import djangoim from '../../images/djnago.png';
 import flutterim from '../../images/flutter.png';
 import golangim from '../../images/golang.png';
 
-const About = () => {
+const About = (props) => {
     return (
         <div>
             <br />
@@ -24,7 +24,7 @@ const About = () => {
             <div>
 
                 <div className="upcoming-courses ms-4 mb-2">
-                    <h2 className="display-2 text-center fw-bold">Upcoming Courses</h2>
+                    <h2 className="display-2 text-center fw-bold">{props.children}</h2>
                     <hr className=" bg-danger mx-auto " />
 
                     <Row>

@@ -1,67 +1,20 @@
-import Button from '@restart/ui/esm/Button';
 import React from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import useSetdata from '../../hook/useSetdata';
+import ExploreCourse from '../ExploreCourse/ExploreCourse';
 
-const ExploreCourses = () => {
+const ExploreCourses = (props) => {
+  const excourses = useSetdata()
     return (
         <div>
+            <br /> <br />
             <div className="explore-courses ms-4 mb-2">
-                <br />
-                <h2 className="display-2 text-center fw-bold">Explore Our Courses</h2>
-                <hr className=" bg-danger mx-auto " />
-                <Row>
-                    <Col md={3}>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                                </Card.Text>
-                                <Button className="btn btn-danger">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={3}>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                                </Card.Text>
-                                <Button className="btn btn-danger">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={3}>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                                </Card.Text>
-                                <Button className="btn btn-danger">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={3}>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                                </Card.Text>
-                                <Button className="btn btn-danger">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
+                <h2 className="display-2 text-center fw-bold">{props.children}</h2>
+                {props.children == null ? "" : <hr className=" bg-danger mx-auto " />}
+                <Row className="m-5">
+                    {
+                        excourses.slice(4, 8).map(excourse => <ExploreCourse exp={excourse}/>)
+                    }
 
                 </Row>
             </div>

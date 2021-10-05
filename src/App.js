@@ -9,6 +9,7 @@ import Courses from './components/Courses/Courses';
 import Contact from './components/Contact/Contact';
 import NotFound from './components/NotFound/NotFound';
 import LoginRegister from './components/LoginRegister/LoginRegister';
+import ExploreCourses from './components/ExploreCourses/ExploreCourses';
 
 function App() {
   return (
@@ -16,17 +17,21 @@ function App() {
      <Router>
        <Header/>
        <Switch>
-         <Route path="/" exact>
+         <Route exact path="/" >
            <Main/>
+          
+
          </Route>
          <Route path="/home">
            <Main/>
          </Route>
          <Route path="/about">
-           <About/>
+           <About>Our Courses</About>
+           <ExploreCourses></ExploreCourses>
          </Route>
          <Route path="/courses">
-           <Courses/>
+          <Courses>All Courses</Courses>
+          <ExploreCourses></ExploreCourses>
          </Route>
          <Route path="/contact">
            <Contact/>

@@ -1,9 +1,8 @@
-import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import stimg1 from '../../images/student-1.jpeg';
 import stimg2 from '../../images/student-2.jpg';
 
-import { Form, FormControl, Image, Nav, Row } from 'react-bootstrap';
+import { Form, FormControl, Nav, } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
@@ -27,8 +26,10 @@ const Home = () => {
                     </div>
                 </>
             </div>
-            <div className="middle-container my-5 ms-5 ">
-                <div className="details">
+            <div className="middle-container ">
+                
+               <div className="d-flex flex-column flex-md-row">
+               <div className="details">
                     <h3>We Have The Best Online Education in The City</h3>
                     At vero eos et accusamus et iusto odio dignissimos ducimus qui
                     blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
@@ -46,14 +47,16 @@ const Home = () => {
                     <img   className="img-fluid" src={stimg1}></img>
                 </div>
                 
-                <div className="img my-5">
+               </div>
+
+               <div className="d-flex flex-column flex-md-row">
+               <div className="w-100 my-5">
                     <img className="img-fluid" src={stimg2}></img>
                 </div>
 
                 
 
                 <div className="details my-5">
-                    
 
                     <ol>
                         <li><strong>Create account</strong></li>
@@ -70,6 +73,8 @@ const Home = () => {
 
                     </ol>
                 </div>
+               </div>
+              
             </div>
             
 

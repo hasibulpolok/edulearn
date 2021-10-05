@@ -28,9 +28,11 @@
 
 .middle-container{
     width: 80%;
-    display: grid;
+    margin: 0 auto;
+    margin-top: 2rem;
+    /* display: grid;
     grid-template-columns: repeat(2,1fr);
-    column-gap: 100px;
+    column-gap: 100px; */
 }
 
 hr{
@@ -39,3 +41,11 @@ hr{
     
 }
 /*  */
+@media only screen and (max-width: 400px) {
+    .middle-container{
+        width: 80%;
+        
+        column-gap: 100px;
+    }
+    }
+  

@@ -6,14 +6,15 @@ import { Link } from 'react-router-dom';
 
 
 const Course = (props) => {
+    const {name,img,desc} = props.course
     return (
         <Col md={3} xs={12}>
         <Card style={{ width: '18rem', marginBottom: "5px" }}>
-            <Card.Img style={{ height: "100px" }} variant="top" src={props.image} />
+            <Card.Img style={{ height: "100px" }} variant="top" src={img} />
             <Card.Body>
-                <Card.Title>{props.title}</Card.Title>
+                <Card.Title>{name}</Card.Title>
                 <Card.Text>
-                    {props.desc}
+                    {desc}
                 </Card.Text>
                 <Button className="btn btn-danger"><Nav.Link><Link className="text-white text-decoration-none fw-bold bg-danger p-2 my-2 rounded" to="/enroll">Start Course</Link></Nav.Link></Button>
             </Card.Body>
